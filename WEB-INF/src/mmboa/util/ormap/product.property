@@ -1,0 +1,9 @@
+id:id:int
+barCode:bar_code:String
+name:name:String
+leasePrice:lease_price:double
+monthLeasePrice:month_lease_price:double
+salePrice:sale_price:double
+deposit:deposit:double
+stock:stock:int
+isDelete:is_delete:int

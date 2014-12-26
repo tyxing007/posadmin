@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+  <constant name="struts.devMode" value="true" />
+  <constant name="struts.action.extension" value="do" />
+  <constant name="struts.convention.result.path" value="/"/>
+  <constant name="struts.convention.package.locators" value="mmboa"/>
+  <constant name="struts.convention.default.parent.package" value="struts-default"/> 
+  <constant name="struts.multipart.maxSize" value="20000000" />
+
+  <package name="struts-default2" abstract="true" extends="struts-default">
+        <result-types>
+            <result-type name="chain" class="com.opensymphony.xwork2.ActionChainResult"/>
+            <result-type name="dispatcher" class="org.apache.struts2.dispatcher.ServletDispatcherResult" default="true"/>
+            <result-type name="freemarker" class="org.apache.struts2.views.freemarker.FreemarkerResult"/>
+            <result-type name="httpheader" class="org.apache.struts2.dispatcher.HttpHeaderResult"/>
+            <result-type name="redirect" class="org.apache.struts2.dispatcher.ServletRedirectResult"/>
+            <result-type name="redirectAction" class="org.apache.struts2.dispatcher.ServletActionRedirectResult"/>
+            <result-type name="stream" class="org.apache.struts2.dispatcher.StreamResult"/>
+            <result-type name="velocity" class="org.apache.struts2.dispatcher.VelocityResult"/>
+            <result-type name="xslt" class="org.apache.struts2.views.xslt.XSLTResult"/>
+            <result-type name="plainText" class="org.apache.struts2.dispatcher.PlainTextResult" />
+        </result-types>
+        <interceptors>
+        	<interceptor name="fileUpload" class="org.apache.struts2.interceptor.FileUploadInterceptor"/>
+        </interceptors>
+        <default-class-ref class="com.opensymphony.xwork2.ActionSupport" />
+  </package>
+
+	<package name="ss" namespace="/pos" extends="struts-default2">
+		<global-results>
+			<result name="error">/error.jsp</result>
+		</global-results>
+		
+		<action name="Product" class="mmb.posadmin.action.ProductAction">
+			<result name="success">/posadmin/product/ProductList.jsp</result>
+			<result name="input">/posadmin/product/productForm.jsp</result>
+			<result name="detail">/posadmin/product/productDetail.jsp</result>
+			<result name="selectProductList">/posadmin/product/selectProductList.jsp</result>
+			<result name="showSaleTag">/posadmin/product/showSaleTag.jsp</result>
+		</action>
+		
+		<action name="order" class="mmb.posadmin.action.OrderAction">
+			<result name="leaseOrderList">/posadmin/order/leaseOrderList.jsp</result>
+			<result name="saledOrderList">/posadmin/order/saledOrderList.jsp</result>
+		</action>
+		
+		<action name="saledOrderEvent" class="mmb.posadmin.action.SaledOrderEventAction">
+			<result name="success">/posadmin/order/showSaledOrderEvent.jsp</result>
+		</action>
+		
+		<action name="orderCount" class="mmb.posadmin.action.OrderCountAction">
+			<result name="success">/posadmin/ordercount/saledList.jsp</result>
+			<result name="counter">/posadmin/ordercount/dealCount.jsp</result>
+		</action>
+		
+		<action name="member" class="mmb.posadmin.action.MemberAction">
+			<result name="success">/posadmin/member/memberList.jsp</result>
+			<result name="detail">/posadmin/member/memberDetail.jsp</result>
+		</action>
+		<action name="memberAccountDetail" class="mmb.posadmin.action.MemberAccountDetailAction">
+			<result name="success">/posadmin/memberaccount/memberAccountDetailList.jsp</result>
+		</action>
+		<action name="memberScore" class="mmb.posadmin.action.MemberScoreAction">
+			<result name="success">/posadmin/memberscore/memberScoreList.jsp</result>
+		</action>
+		
+		<action name="cashier" class="mmb.posadmin.action.CashierAction">
+			<result name="success">/posadmin/cashier/cashierList.jsp</result>
+			<result name="input">/posadmin/cashier/cashierForm.jsp</result>
+			<result name="detail">/posadmin/cashier/cashierDetail.jsp</result>
+		</action>
+		
+		<action name="balance" class="mmb.posadmin.action.BalanceAction">
+			<result name="success">/posadmin/balance/balanceList.jsp</result>
+		</action>
+		
+		<action name="checkStock" class="mmb.posadmin.action.CheckStockAction">
+			<result name="success">/posadmin/stock/checkStockList.jsp</result>
+		</action>
+		<action name="checkStockItem" class="mmb.posadmin.action.CheckStockItemAction">
+			<result name="success">/posadmin/stock/checkStockItemList.jsp</result>
+			<result name="printCheckStockView">/posadmin/stock/printCheckStock.jsp</result>
+		</action>
+		
+		<action name="receiveOrder" class="mmb.posadmin.action.ReceiveOrderAction">
+			<result name="success">/posadmin/receiveorder/receiveOrderList.jsp</result>
+		</action>
+		<action name="receiveOrderItem" class="mmb.posadmin.action.ReceiveOrderItemAction">
+			<result name="success">/posadmin/receiveorder/receiveOrderItemList.jsp</result>
+		</action>
+		
+		<action name="invoice" class="mmb.posadmin.action.InvoiceAction">
+			<result name="productList">/posadmin/invoice/productList.jsp</result>
+			<result name="success">/posadmin/invoice/invoiceList.jsp</result>
+		</action>
+		
+		<action name="posManager" class="mmb.posadmin.action.PosManagerAction">
+			<result name="success">/posadmin/posmanager/posManagerList.jsp</result>
+			<result name="add">/posadmin/posmanager/posManagerForm.jsp</result>
+			<result name="detail">/posadmin/posmanager/posManagerDetail.jsp</result>
+		</action>
+		
+		<action name="systemUpdate" class="mmb.posadmin.action.SystemUpdateAction">
+			<result name="systemUpdate">/posadmin/systemupdate/systemUpdate.jsp</result>
+		</action>
+		
+		<action name="systemConfig" class="mmb.posadmin.action.SystemConfigAction">
+			<result name="systemConfig">/posadmin/systemconfig/systemConfig.jsp</result>
+		</action>
+		
+		<action name="returnOrder" class="mmb.posadmin.action.ReturnOrderAction">
+			<result name="success">/posadmin/returnorder/returnOrderList.jsp</result>
+			<result name="input">/posadmin/returnorder/returnOrderForm.jsp</result>
+		</action>
+		<action name="returnOrderItem" class="mmb.posadmin.action.ReturnOrderItemAction">
+			<result name="success">/posadmin/returnorder/returnOrderItemList.jsp</result>
+			<result name="input">/posadmin/returnorder/returnOrderItemForm.jsp</result>
+		</action>
+		<action name="priceCard" class="mmb.posadmin.action.PriceCardAction">
+			<result name="success">/posadmin/pricecard/priceCardList.jsp</result>
+			<result name="detail">/posadmin/pricecard/priceCardDetail.jsp</result>
+		</action>
+		<action name="priceCardCharge" class="mmb.posadmin.action.PriceCardChargeAction">
+			<result name="success">/posadmin/pricecard/priceCardChargeList.jsp</result>
+		</action>
+		<action name="event" class="mmb.posadmin.action.EventAction">
+			<result name="success">/posadmin/event/eventList.jsp</result>
+		</action>
+		<action name="buyGiftEvent" class="mmb.posadmin.action.BuyGiftEventAction">
+			<result name="detail">/posadmin/event/showBuyGiftEvent.jsp</result>
+		</action>
+		<action name="swapBuyEvent" class="mmb.posadmin.action.SwapBuyEventAction">
+			<result name="detail">/posadmin/event/showSwapBuyEvent.jsp</result>
+		</action>
+		<action name="comboEvent" class="mmb.posadmin.action.ComboEventAction">
+			<result name="detail">/posadmin/event/showComboEvent.jsp</result>
+		</action>
+		<action name="countDiscountEvent" class="mmb.posadmin.action.CountDiscountEventAction">
+			<result name="detail">/posadmin/event/showCountDiscountEvent.jsp</result>
+		</action>
+		<action name="moneyDiscountEvent" class="mmb.posadmin.action.MoneyDiscountEventAction">
+			<result name="detail">/posadmin/event/showMoneyDiscountEvent.jsp</result>
+		</action>
+		
+		<action name="adjustPriceBill" class="mmb.posadmin.action.AdjustPriceBillAction">
+			<result name="success">/posadmin/adjustpricebill/adjustPriceBillList.jsp</result>
+			<result name="input">/posadmin/adjustpricebill/adjustPriceBillForm.jsp</result>
+		</action>
+		
+	</package>
+	
+	<package name="pos-interface" namespace="/enter" extends="struts-default2">
+		<action name="pos" class="mmb.posadmin.action.PosAction">
+		</action>
+		
+		<action name="poscenter" class="mmb.posadmin.action.PoscenterAction">
+		  <result name="updateip">/posadmin/shop/shopIpForm.jsp</result>
+		    <result name="success">/success.jsp</result>
+		    <result name="error">/error.jsp</result>
+		</action>
+	</package>
+
+</struts>

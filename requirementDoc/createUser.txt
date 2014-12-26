@@ -1,0 +1,12 @@
+
+
+--`username`：用户名，不能重复
+--`name`：姓名
+--如需新增把test02改成要添加的用户名即可,初始密码为123
+INSERT INTO `user`(`username`,`password`,`name`,`create_datetime`) VALUES ('test02', '8wAW9RYebN3WPpalOe__Yg))','test02','2012-11-27 09:33:49');
+INSERT INTO `user_permission`(`user_id`, `security_level`,`groups`) select id, '10', '1' from `user` u where u.`username`='test02';
+
+INSERT INTO `user`(`username`,`password`,`name`,`create_datetime`) VALUES ('test', '8wAW9RYebN3WPpalOe__Yg))','普通管理员','2012-11-27 09:33:49');
+INSERT INTO `user_permission`(`user_id`, `security_level`,`groups`) select id, '5', '1' from `user` u where u.`username`='test';
+
+

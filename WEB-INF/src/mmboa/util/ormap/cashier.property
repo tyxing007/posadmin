@@ -1,0 +1,8 @@
+id:id:int
+name:name:String
+idCard:id_card:String
+username:username:String
+password:password:String
+saleType:sale_type:int
+isDelete:is_delete:int
+forbidden:forbidden:int

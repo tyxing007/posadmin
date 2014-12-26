@@ -1,0 +1,11 @@
+id:id:int
+posCode:pos_code:String
+cashierId:cashier_id:int
+startTime:start_time:Timestamp
+endTime:end_time:Timestamp
+theoryCash:theory_cash:double
+posCash:pos_cash:double
+handoverId:handover_id:int
+initPoscash:init_poscash:double
+addPoscash:add_poscash:double
+backText:back_text:String

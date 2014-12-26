@@ -1,0 +1,18 @@
+.uplodgz {
+	 width:4200px; 
+	 border:1px solid #000;
+	 border-width:1px 0 0 1px;
+	 margin:2px 0 2px 0;
+	 border-collapse:collapse;
+}
+.uplodgz tr {
+	 border:1px solid #000;
+	 border-width:0 1px 1px 0;
+	 margin:2px 0 2px 0;
+}
+.uplodgz tr td {
+	border:1px solid #000;
+	border-width:0 1px 1px 0;
+	margin:2px 0 2px 0;  
+	align:center;
+}

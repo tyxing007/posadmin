@@ -1,0 +1,6 @@
+id:id:int
+posCode:pos_code:String
+posIp:pos_ip:String
+createTime:create_time:Timestamp
+operUser:oper_user:String
+isDelete:is_delete:int

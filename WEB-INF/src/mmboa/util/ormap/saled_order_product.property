@@ -1,0 +1,6 @@
+id:id:int
+productId:product_id:int
+saledOrderId:saled_order_id:int
+count:count:int
+prePrice:pre_price:double
+eventRemark:event_remark:String

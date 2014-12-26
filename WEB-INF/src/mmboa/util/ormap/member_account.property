@@ -1,0 +1,5 @@
+id:id:String
+availableBalance:available_balance:double
+freezeBalance:freeze_balance:double
+consumption:consumption:double
+score:score:int

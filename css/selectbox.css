@@ -1,0 +1,42 @@
+#left
+{
+    width:40%;
+    float:left;
+}
+#right
+{     
+    width:40%;      
+    float:left;
+}
+#btns
+{
+    width: 20%;
+    float:left;
+}
+#container
+{         
+	border:2px solid #CCC;
+	height:203px;
+    width:400px;    
+}
+#waitPerson
+{
+    height: 150px;
+    width:100%;
+}
+#alreadPerson
+{
+    height: 125px;
+    width:100%;
+}
+span
+{
+    display:block;  
+    font-size:13px;
+    font-weight:bold;
+    text-align:center;
+    height:25px;
+    line-height:25px;
+    border:1px solid #CCC;
+    background-color:#a0d8ff    
+}

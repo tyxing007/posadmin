@@ -1,0 +1,7 @@
+id:id:int
+serialNumber:serial_number:String
+memberId:member_id:String
+price:price:double
+saledTime:saled_time:Timestamp
+orderType:order_type:int
+score:score:int

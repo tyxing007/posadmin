@@ -1,0 +1,214 @@
+body {
+	font: 75% Verdana, Tahoma, Arial;
+	color: #444;
+	margin: 12px;
+}
+
+form {
+	padding: 0px;
+	margin: 0px;
+}
+
+img {
+	border: 0px;
+}
+
+table.list {
+	border-collapse:collapse;  
+	font-size: 100%;
+	text-decoration: none;
+	border: 1px solid #848484;
+}
+
+table.list th{
+	background:#CCCCCC;
+	line-height: 25px;
+	border: 1px solid #848484;
+}
+
+table.list tr{
+	height: 30px;
+	border: 1px solid #848484;
+}
+
+table.list td{
+	text-align: center;
+	border: 1px solid #848484;
+}
+
+
+.delete-info  {
+	color: #E85023;
+	border: 1px solid #E85023;
+	background-color: #FEDACF;
+}
+
+.small {
+	font: 80% Tahoma, Arial;
+}
+
+.gray {
+	color: #ABC;
+}
+
+
+a {
+	color: #997300;
+	padding: 1px;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #C19100;
+	background: #FFF6D9;
+}
+
+input,select {
+	font: 100% Tahoma, Verdana, Arial;
+	border: 1px solid #939BA2;
+	height: 20px;
+}
+
+textarea {
+	font: 100% Courier New, Courier, Verdana;
+	border: 1px solid #939BA2;
+}
+
+.link {
+	color: #3366CC;
+	text-decoration: underline;
+	cursor: hand;
+}
+
+div.menu {
+	padding-top: 8px;
+	display: block;
+}
+
+div.menu a {
+	margin-right: 16px;
+	padding:4px 4px 2px 4px;
+	border-bottom: 2px solid #EEE;
+}
+
+div.menu a:hover {
+	font-weight:bold;
+	border-bottom: 2px solid #E8CA23;
+}
+
+#header {
+	height: 90px;
+	padding-left: 350px;
+	background: url(../images/welcome/logo.jpg) no-repeat;
+	display: block;
+}
+
+#nav{
+	float:left;
+	width:180px;
+	margin-right:10px;
+}
+
+#nav .root{
+	
+}
+
+#nav ul{
+	margin:0px;
+	padding:0px;
+}
+#nav ul li{
+	list-style-type:none;
+	line-height: 22px;
+	padding-left:24px;
+	background: url(../images/welcome/arr.png) no-repeat 4px 4px;
+	border-radius: 5px;
+}
+#nav ul li.folder{
+	background: url(../images/welcome/folder.png) no-repeat 4px 4px;
+}
+#nav ul li.folder_open{
+	background: url(../images/welcome/folder_open.png) no-repeat 4px 4px;
+}
+#nav ul li.setup{
+	background: url(../images/welcome/setup.png) no-repeat 4px 4px;
+}
+#nav ul li.book{
+	background: url(../images/welcome/book.png) no-repeat 4px 4px;
+}
+#nav ul li.note{
+	background: url(../images/welcome/note.png) no-repeat 4px 4px;
+}
+
+#nav ul li.base{
+	background-color: #778;
+	border-bottom: 1px solid #ccc;
+}
+#nav ul li.base a{
+	color: #fff;
+	font-weight: 900;
+}
+#nav ul li.base a:hover{
+	background-color: #889;
+	border-radius: 5px;
+}
+
+#nav ul li a{
+	line-height: 24px;
+	height: 24px;
+	display:block;
+}
+
+#page{
+	float:left;
+}
+
+
+#footer {
+	width: 100%;
+	text-align: center;
+	padding: 16px 0px 4px 0px;
+	font-size: 80%;
+	display: block;
+}
+
+.button {
+	padding: 5px 5px 5px 5px;
+	font-size: 100%;
+	font-weight:bold;
+	color: #82700F;
+	background: #FEF7CF url(../images/welcome/button.gif);
+	border: 1px solid #E8CA23;
+	cursor:hand;
+
+	/*
+	color: #154BA0;
+	background-color: #FFFFCC;
+	border: 1px solid #FF9900;
+	*/
+	height: 25px;
+	line-height: 12px;
+}
+
+/*
+button {
+	font-size: 100%;
+	text-align: center;
+	color: #444;
+	background: #CCC url(images/button_bg.gif);
+	border: 0px;
+	cursor:hand;
+	margin: 2px;
+	height: 22px;
+	width: 96px;
+	line-height: 20px;
+}
+*/
+.tip {
+	font: 10px Verdana, Arial, Tahoma;
+	text-align: center;
+	background: #EEE url(../images/welcome/tip.gif);
+	height: 22px;
+	width: 28px;
+	line-height: 20px;
+}

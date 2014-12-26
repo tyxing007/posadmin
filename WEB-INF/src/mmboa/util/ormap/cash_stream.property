@@ -1,0 +1,6 @@
+id:id:int
+serialNumber:serial_number:String
+posCode:pos_code:String
+cashierId:cashier_id:int
+cash:cash:double
+getTime:get_time:Timestamp

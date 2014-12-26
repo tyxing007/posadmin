@@ -1,0 +1,11 @@
+id:id:int
+shopCode:shop_code:String
+saledOrderLastSubmitTime:saled_order_last_submit_time:Timestamp
+leaseOrderLastSubmitTime:lease_order_last_submit_time:Timestamp
+invoiceLastSubmitTime:invoice_last_submit_time:Timestamp
+memberLastSubmitTime:member_last_submit_time:Timestamp
+memberLastSyncTime:member_last_sync_time:Timestamp
+versionNumber:version_number:String
+versionName:version_name:String
+versionDesc:version_desc:String
+

@@ -1,0 +1,5 @@
+id:id:int
+orderId:order_id:int
+productId:product_id:int
+sendCount:send_count:int
+receiveCount:receive_count:int
